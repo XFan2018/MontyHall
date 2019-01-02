@@ -1,0 +1,74 @@
+body{
+  background-color: linen;
+}
+
+img{
+  width : 200px;
+  height : 300px;
+  padding : 10px;
+}
+
+h2{
+  text-align: center;
+}
+
+strong{
+  color: purple;
+  background-color: lightblue;
+  padding:5px;
+  border-radius: 10px;
+}
+
+.door{
+  width : 250px;
+  margin : 2px yellow solid;
+  padding: 3px;
+  align : center;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+.button{
+  display : none;
+  border: 2px black solid;
+  border-radius: 5px;
+  paddling : 2px;
+  margin: 5px;
+}
+
+#win{
+  align: left;
+}
+
+#Lost{
+  align: right;
+}
+
+#top{
+  width: 200px;
+  align : left;
+}
+
+#container{
+  width: 800px;
+  margin: 0 auto;
+  border: 1px black solid;
+  text-align: center;
+  background-image: url('background.jpg');
+  background-size: auto;
+}
+
+#play_again{
+  padding : 5px;
+  font-family: monospace;
+  font-size: 15px;
+  background-color: beige;
+  border-radius: 10px;
+}
+
+#result{
+  background-color: white;
+  font-size: 20px;
+  font-style: italic;
+  font-family: fantasy;
+}
