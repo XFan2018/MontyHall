@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Monty Hall</title>
+    <script type="text/javascript" src="MontyHall.js">
+    </script>
+    <script type="text/javascript" src="prototype.js">
+    </script>
+    <link rel="stylesheet" href="MontyHall.css">
+  </head>
+
+  <body>
+    <h2> Monty Hall Game </h2>
+    <p>
+      There are three doors in front of you. Behind them are one Bugatti and two goats.
+      You win if you pick the Bugatti, otherwise you lose.
+      After you have chosen one door, the system will tell you a door without Bugatti, and you will have
+      a chance to switch the choice. This simulation will help you to find the strategy leading to a higher chance of winning.
+    </p>
+
+    <div id="container">
+      <div id="top">
+
+        <div id="topLeft">
+          <h5 id="win"> you win 0 times </h5>
+          <h5 id="lose"> you lose 0 times </h5>
+        </div>
+
+        <div id="topRight">
+          <p id="simulation">
+            <button type="button" name="Simulation" id="simuButton">Simulation</button>
+            <input type="text" name="simulationTime" value="" id="simuInput">times
+          </p>
+        </div>
+      </div>
+
+      <h3 id="prompt"> Please pick up a door </h3>
+      <p id="result"></p>
+      <p>
+        <button class = "button" id="yes"> yes </button><button class = "button" id = "no"> no </button>
+      </p>
+
+      <div class="door">
+        <p><strong> 1st Door </strong></p>
+        <img class="images" alt="door1" src="close_door.jpg">
+      </div>
+
+      <div class="door">
+        <p><strong> 2nd Door </strong></p>
+        <img class="images" alt="door2" src="close_door.jpg">
+      </div>
+
+      <div class="door">
+        <p><strong> 3rd Door </strong></p>
+        <img class="images" alt="door3" src="close_door.jpg">
+      </div>
+
+      <div>
+        <p>
+          <button id="play_again"> play again </button>
+        </p>
+      </div>
+
+    </div>
+  </body>
+</html>
