@@ -1,4 +1,4 @@
-  // set a global variable to random the number of the gift
+  // set a global variable to random a number which is the gift
 var gift_num = Math.floor(Math.random()*3);
 console.log("gift : " + gift_num);
 
@@ -183,6 +183,6 @@ function playAgain(){
   }
 
   // change the prompt
-  $('prompt').innerHTML = "please pick up a door"
+  $('prompt').innerHTML = "Please pick up a door"
   $('prompt').style.color = "black";
 }
