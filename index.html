@@ -13,10 +13,11 @@
   <body>
     <h2> Monty Hall Game </h2>
     <p>
-      There are three doors in front of you. Behind them are one Bugatti and two goats.
-      You win if you pick the Bugatti, otherwise you lose.
-      After you have chosen one door, the system will tell you a door without Bugatti, and you will have
-      a chance to switch the choice. This simulation will help you to find the strategy leading to a higher chance of winning.
+      There are three doors in front of you. Behind one door is a car. Behind the others are goats.
+      You win if you pick the car, otherwise you lose.
+      After you pick one door, the system will open a door without the car, and you will have
+      a chance to switch the choice. Will you have a higher chance to win if you switch?
+      <a href="https://en.wikipedia.org/wiki/Monty_Hall_problem">Monty Hall problem</a>
     </p>
 
     <div id="container">
@@ -26,16 +27,9 @@
           <h5 id="win"> you win 0 times </h5>
           <h5 id="lose"> you lose 0 times </h5>
         </div>
-
-        <div id="topRight">
-          <p id="simulation">
-            <button type="button" name="Simulation" id="simuButton">Simulation</button>
-            <input type="text" name="simulationTime" value="" id="simuInput">times
-          </p>
-        </div>
       </div>
 
-      <h3 id="prompt"> Please pick up a door </h3>
+      <h3 id="prompt"> Please pick a door </h3>
       <p id="result"></p>
       <p>
         <button class = "button" id="yes"> yes </button><button class = "button" id = "no"> no </button>
