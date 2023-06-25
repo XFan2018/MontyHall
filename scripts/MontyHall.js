@@ -31,11 +31,11 @@ window.onload = function(){
 
     //set the gift image to bugatti.
     if (i == gift_num) {
-      $$(".images")[i].img = "bugatti.jpg";
+      $$(".images")[i].img = "images/bugatti.jpg";
 
     //set the other two images goats.
     } else {
-      $$(".images")[i].img = "goat.jpg";
+      $$(".images")[i].img = "images/goat.jpg";
     }
   }
 
@@ -88,7 +88,7 @@ function ShowAWrongOne(){
 
 // oper the door of a given number
 function OpenDoor(num,time){
-  $$('.images')[num].src = "open_door.jpg";
+  $$('.images')[num].src = "images/open_door.jpg";
 
 // after certain time, show the result of the player's choice.
   var timer1 = setTimeout(showResult, time, $$('.images')[num]);
@@ -110,7 +110,7 @@ function OpenDoor2(num, time){
   $('result').innerHTML = "";
 
   // change the hightlighted image to open_door
-  $$('.images')[num].src = "open_door.jpg";
+  $$('.images')[num].src = "images/open_door.jpg";
   var timer2 = setTimeout(showResult2, time, $$('.images')[num]);
 }
 
@@ -164,18 +164,18 @@ function playAgain(){
   // If a image is clicked, call function ShowAWrongOne()
   for (var i = 0; i < $$(".images").length; i++) {
     // change images back to close_door
-    $$('.images')[i].src = "close_door.jpg";
+    $$('.images')[i].src = "images/close_door.jpg";
 
     // unhightlight all the images
     $$('.images')[i].parentNode.style.backgroundColor = "transparent";
 
     //set the gift image to bugatti.
     if (i == gift_num) {
-      $$(".images")[i].img = "bugatti.jpg";
+      $$(".images")[i].img = "images/bugatti.jpg";
 
     //set the other two images goats.
     } else {
-      $$(".images")[i].img = "goat.jpg";
+      $$(".images")[i].img = "images/goat.jpg";
     }
 
     // add event handler
